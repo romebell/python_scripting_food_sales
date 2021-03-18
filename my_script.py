@@ -50,9 +50,15 @@ def append_text():
         f.write('3/17/2021')
         print('done')
 
+def write_input_to_file():
+    user_input = input('Hello, enter your name:\n')
+    with open('names.txt', 'w') as f:
+        f.write(user_input)
+
 
 if __name__ == '__main__':
     # read_only()
     # write_only()
     # read_food_sales()
-    append_text()
+    # append_text()
+    write_input_to_file()
